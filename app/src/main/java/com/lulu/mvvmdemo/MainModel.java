@@ -56,7 +56,7 @@ public class MainModel {
         isExistingUserChecked.set(true);
     }
 
-    public void logInClicked() {
+    public void loginOrCreateButtonOnClick(View view) {
         if (isExistingUserChecked.get()) {
             mView.showShortToast("Invalid username or password");
         } else {

@@ -38,13 +38,6 @@ public class MainActivityFragment extends Fragment{
     }
 
     private void attachButtonListener() {
-        mBinding.loginOrCreateButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mViewModel.logInClicked();
-            }
-        });
-
         mBinding.returningUserRb.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
