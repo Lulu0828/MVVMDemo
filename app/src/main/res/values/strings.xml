@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MVVMDemo</string>
+    <string name="create_user">Create user</string>
+    <string name="log_in">Log in</string>
+</resources>
