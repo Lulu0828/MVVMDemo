@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CompoundButton;
 import android.widget.Toast;
 
 import com.lulu.mvvmdemo.databinding.FragmentMainBinding;
@@ -33,18 +32,18 @@ public class MainActivityFragment extends Fragment{
         mBinding = FragmentMainBinding.bind(view);
         mViewModel = new MainModel(this, getResources());
         mBinding.setData(mViewModel);
-        attachButtonListener();
+//        attachButtonListener();
         return view;
     }
 
-    private void attachButtonListener() {
-        mBinding.returningUserRb.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                mViewModel.isExistingUserChecked.set(isChecked);
-            }
-        });
-    }
+//    private void attachButtonListener() {
+//        mBinding.returningUserRb.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+//                mViewModel.isExistingUserChecked.set(isChecked);
+//            }
+//        });
+//    }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {

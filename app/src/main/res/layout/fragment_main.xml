@@ -45,6 +45,7 @@
                 android:layout_height="wrap_content"
                 android:text="Returning user"
                 android:checked="@{data.isExistingUserChecked}"
+                android:setOnCheckedChangeListener="@{data.checkedChange}"
                 android:id="@+id/returningUserRb"/>
 
             <RadioButton
@@ -75,6 +76,13 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/username"
                 android:minWidth="200dp"/>
+
+            <!--<EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:minWidth="200dp"
+                android:addTextChangedListener="@{data.watcher}"/>-->
         </LinearLayout>
 
         <LinearLayout
